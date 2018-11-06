@@ -24,7 +24,7 @@ app.post('/', function(req, res){
 	request.get({
   url: "https://api.nytimes.com/svc/topstories/v2/q=${results.subsection}.json",
   qs: {
-    'api-key': "1f0b2087b98240409e52d724ebfc2673"
+    'api-key': ""
   },
 }, function(err, response, body) {
   //let story = JSON.parse(body);
