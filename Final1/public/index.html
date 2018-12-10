@@ -1,0 +1,60 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Socket.IO whiteboard</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="text/javascript">
+  var imageURLs = [
+       "dragon.jpg"
+     , "food.png"
+     , "computer.png"
+     , "plane.png"
+  ];
+  function getImageTag() {
+    var img = '<img src=\"';
+    var randomIndex = Math.floor(Math.random() * imageURLs.length);
+    img += imageURLs[randomIndex];
+    img += '\" alt=\"Some alt text\"/>';
+    return img;
+  }
+</script>
+</head>
+<body>
+
+  <script type="text/javascript">
+  document.write(getImageTag());
+ </script>
+
+  <canvas class="whiteboard" ></canvas>
+
+ <!--  <img src="dragon.jpg" alt="dragon" title="dragon" /> -->
+
+  <div class="colors">
+    <div class="color gray"></div>
+    <div class="color black"></div>
+    <div class="color red"></div>
+    <div class="color orange"></div>
+    <div class="color yellow"></div>
+    <div class="color green"></div>
+    <div class="color blue"></div>
+    <div class="color purple"></div>
+    <div class="color white">ERASER</div>
+
+  </div>
+
+  <div class= "sizes">
+     <div class="size 5"></div>
+    <div class="size 10"></div>
+    <div class="size 15"></div>
+
+  </div>
+
+
+
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/main.js"></script>
+</body>
+</html>

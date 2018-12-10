@@ -1,0 +1,75 @@
+
+/**
+ * Fix user-agent
+ */
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/**
+ * Canvas
+ */
+
+.whiteboard {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+}
+
+.colors {
+  position: fixed;
+}
+
+.color {
+  display: inline-block;
+  height: 48px;
+  width: 48px;
+}
+
+.sizes {
+  padding-top: 100px;
+  float: right;
+  border-width: 10px
+}
+
+.size {
+  display: inline-block;
+  height: 48px;
+  width: 48px;
+}
+
+.color.gray { background-color: gray; }
+.color.black { background-color: black; }
+.color.red { background-color: red; }
+.color.orange { background-color: orange; }
+.color.yellow { background-color: yellow; }
+.color.green { background-color: green; }
+.color.blue { background-color: blue; }
+.color.purple { background-color: purple; }
+
+
+.size.5 { background-color:; black;  }
+.size.10 { background-color: black; }
+.size.15 { background-color: black; }
+
+
+
+
+
+
+
+
+
+
+
