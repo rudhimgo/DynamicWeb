@@ -24,6 +24,11 @@
     colors[i].addEventListener('click', onColorUpdate, false);
   }
 
+   for (var i = 0; i < sizes.length; i++){
+    sizes[i].addEventListener('click', onSizeUpdate, false);
+    console.log("you clicked a size!");
+  }
+
   socket.on('drawing', onDrawingEvent);
 
   window.addEventListener('resize', onResize, false);
@@ -76,7 +81,7 @@
   }
 
   function onSizeUpdate(e){
-    current.size = e.getElementsByClassName
+    current.size = e.getElementsByClassName.split(' ')[1];
   }
 
   // limit the number of events per second
