@@ -37,18 +37,6 @@ html, body {
   width: 48px;
 }
 
-.sizes {
-  padding-top: 100px;
-  float: right;
-  border-width: 10px
-}
-
-.size {
-  display: inline-block;
-  height: 48px;
-  width: 48px;
-}
-
 .color.gray { background-color: gray; }
 .color.black { background-color: black; }
 .color.red { background-color: red; }
@@ -57,19 +45,3 @@ html, body {
 .color.green { background-color: green; }
 .color.blue { background-color: blue; }
 .color.purple { background-color: purple; }
-
-
-.size.five { background-color: black;  }
-.size.ten { background-color: black; }
-.size.fifteen { background-color: black; }
-
-
-
-
-
-
-
-
-
-
-

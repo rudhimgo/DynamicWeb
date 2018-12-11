@@ -19,6 +19,30 @@
     img += '\" alt=\"Some alt text\"/>';
     return img;
   }
+  
+  var animalWords = [
+       "dragon"
+     , "fish"
+     , "cat"
+     , "dog"
+  ];
+
+  var randomAnimal = animalWords[Math.floor(Math.random()*animalWords.length)];
+  console.log(randomAnimal);
+
+  document.body.innerHTML = randomAnimal;
+
+   var colorOptions = [
+       "red"
+     , "blue"
+     , "green"
+     , "yellow"
+  ];
+
+  var randomColor = colorOptions[Math.floor(Math.random()*colorOptions.length)];
+  console.log(randomColor);
+
+
 </script>
 </head>
 <body>
@@ -41,13 +65,6 @@
     <div class="color blue"></div>
     <div class="color purple"></div>
     <div class="color white">ERASER</div>
-
-  </div>
-
-  <div class= "sizes">
-     <div class="size five"></div>
-    <div class="size ten"></div>
-    <div class="size fifteen"></div>
 
   </div>
 
